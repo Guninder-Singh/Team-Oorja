@@ -1,0 +1,163 @@
+
+
+.landing-page {
+
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(42,38,38,0), rgba(50,60,61,1.5)), url('./images/image.avif');
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-image: initial;
+    background-color: transparent;
+    height: 5.5em;
+    width: 100%;
+    
+}
+#header nav{
+    height: 4.5em;
+    width: 60%;
+    float: right;
+    display: inline;
+   
+   
+    
+}
+#header ul{
+    height: 3.5em;
+    width: 60%;
+    display: inline;
+     padding-top: 20px;
+   
+   
+   
+    
+}
+
+a{
+    color: aliceblue;
+    padding-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 80%;
+    padding-right: 15px;
+    display: inline-block;
+    padding-top: 50px;
+}
+a:hover{
+    color: rgb(52, 133, 163);
+    cursor: pointer;
+}
+#header ul button{
+    padding-left: 20px;
+}
+
+#header img{
+    height: 100px;
+    width: 150px;
+    background: transparent;
+}
+#welcome{
+    width: 100%;
+    align-items: center;
+    padding-top: 150px;
+    margin-right: 10px;
+    
+}
+
+
+
+#welcome .team-oorja{
+    font-size: 220px;
+    color: gainsboro;
+   text-align: center;
+}
+#welcome h2{
+    font-size: 100px;
+    color: gainsboro;
+   text-align: center;
+   padding-top: 25px;
+   
+}
+
+#motto{
+ width: 100%;
+ align-items: center;
+ padding-left: 10px;
+ 
+}
+
+#motto h2{
+    color: gainsboro;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.scroll-arrow {
+    
+   padding-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('./images/down-arrow.png'); /* Replace with your arrow icon */
+    background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+.arrow{
+    padding-top: 200px;
+    text-align: center;
+}
+  
+  .scroll-arrow:hover {
+    opacity: 0.7;
+  }
+  
+
+#team-page{
+    background-color:darkslategrey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 30;
+}
+
+#info{
+    text-align: center;
+    width: 80%;
+    padding-left: 150px;
+    padding-top: 50px;
+    font-size: 25px;
+    color: bisque;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 60%;
+    height: 60%; /* Adjust the height as needed */
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transition: opacity 0.5s ease-in-out;
+    padding-top: 80px;
+  }
+  
+  .slide.active {
+    opacity: 100;
+  }
+  
