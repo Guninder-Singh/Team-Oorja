@@ -1,19 +1,19 @@
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+let slideIndex = 0;
+showSlides();
 
-function showSlide() {
-  slides.forEach((slide, index) => {
-    if (index === currentSlide) {
-      slide.classList.add('active');
-    } else {
-      slide.classList.remove('active');
-    }
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+$('.arrow').click(function() {
+  $('.arrow').slideUp('slow');
   });
-}
-
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide();
-}
-
-setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
