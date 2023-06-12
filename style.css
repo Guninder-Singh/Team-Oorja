@@ -3,7 +3,7 @@
 .landing-page {
 
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(42,38,38,0), rgba(50,60,61,1.5)), url('./images/image.avif');
+    background-image: linear-gradient(to bottom, rgba(42,38,38,0), rgba(50,60,61,1.5)), url('./images/image-5.jpeg');
     background-size: cover;
    background-repeat: no-repeat;
 }
@@ -64,8 +64,9 @@ a:hover{
 #welcome{
     width: 100%;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 130px;
     margin-right: 10px;
+    
     
 }
 
@@ -73,8 +74,11 @@ a:hover{
 
 #welcome .team-oorja{
     font-size: 220px;
-    color: gainsboro;
+    color:black;
    text-align: center;
+   animation-name: moveInleft;
+    animation-duration: 3s;
+    font-family: customfont;
 }
 #welcome h2{
     font-size: 100px;
@@ -87,7 +91,7 @@ a:hover{
 #motto{
  width: 100%;
  align-items: center;
- padding-left: 10px;
+ 
  
 }
 
@@ -95,6 +99,9 @@ a:hover{
     color: gainsboro;
     font-size: 20px;
     text-align: center;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    font-family: customfont;
 
 }
 
@@ -106,12 +113,16 @@ a:hover{
     background-image: url('./images/down-arrow.png'); /* Replace with your arrow icon */
     background-size: cover;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: bottom 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+overflow: hidden;
+
   }
 
 .arrow{
     padding-top: 200px;
     text-align: center;
+    transition: all .5s ease-in-out;
+
 }
   
   .scroll-arrow:hover {
@@ -120,11 +131,11 @@ a:hover{
   
 
 #team-page{
-    background-color:darkslategrey;
+    background-color:black;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    opacity: 30;
+    opacity: 0.96;
 }
 
 #info{
@@ -133,31 +144,381 @@ a:hover{
     padding-left: 150px;
     padding-top: 50px;
     font-size: 25px;
-    color: bisque;
+    color: #CC6666;
+    animation-name: moveInRight;
+    animation-duration: 3s;
 }
 
-.slideshow-container {
-    position: relative;
-    width: 60%;
-    height: 60%; /* Adjust the height as needed */
-    overflow: hidden;
+
+
+ #title{
+    color: blanchedalmond;
+  }
+
+#id-for-contact-us{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+#contact{
     text-align: center;
+}
+
+#title{
+    padding: 25px;
+    font-size: 75px;
+    margin-top: 40px;
+    animation: moveInleft;
+    animation-duration: 3s;
+}
+
+
+
+#id-for-landing-page{
+    opacity: 0;
+    
+    animation: id-for-landing-page ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes id-for-landing-page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+
+@font-face {
+    font-family: customfont;
+    src:url(./images/PT_Serif/PTSerif-Regular.ttf);
+}
+
+
+.container{
+    padding: 20px;
+    max-width: 50%;
     margin: auto;
+    margin-top: 30px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+}
+.slide-wrapper{
+    position: relative;
+    max-width: 48%;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 3px 6px 2px hsla(0,0%,0%,0.25) ;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider nav{
+    display: grid;
+    column-gap: 10px;
+    position: relative;
+    bottom: 10px;
+    justify-content: center;
+    transform: translateX(-50%);
+    z-index: 1;
+    align-items: center;
+   
+}
+.slider-nav a{
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+ 
+    
+}
+.slider nav a:hover{
+    opacity:1;
+}
+
+#social-media{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/thapar.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#social-media #colour{
+    height: 100%;
+    width: 100%;
+ background-color:rgba(18, 19, 26, 0.95);
+   opacity: 0.96;
+   align-items: center;
+   margin: auto;
+}
+
+#social-media #colour #insta{
+    height: 100%;
+   
+ text-align: center;
+   align-items: center;
+  
+  margin-left: 510px;
+   
+   
+}
+#social-media #colour #insta #widget{
+    text-align: center;
+    padding-top: 100px;
+    align-items: center;
+}
+
+#paragraph{
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 55px;
+    color: #CC6666;
+    position: absolute;
+    left: 150px;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+#form{
+    padding-left: 80px;
+    padding-top: 20px;
+    position: absolute;
+    right: 250px;
+}
+
+.feedback-input {
+    color:#CC6666;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:400;
+    font-size: 24px;
+    border-radius: 5px;
+    line-height: 1px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 25px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+    padding-top: 15px;
     
   }
   
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 100;
-    transition: opacity 0.5s ease-in-out;
-    padding-top: 80px;
+  .feedback-input:focus { border:2px solid #CC4949; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
   }
   
-  .slide.active {
-    opacity: 100;
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#CC6666;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:20px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:4px;
+    font-weight:700;
   }
+  [type="submit"]:hover { background:#CC4949; }
+
+  #email{
+    padding-top: 10px;
+  }
+  #icons{
+    padding-top:20px;
+    size:25px;
+    font-size: 40px;
+  }
+  #icons ul{
+  
+    display: inline;
+    margin-right:20px;
+    
+    
+ }
+
+ #icons ul:hover{
+    cursor:pointer;
+ }
+
+ @keyframes id-for-contact-us {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+#id-for-contact-us{
+    animation: id-for-landing-page ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+footer {
+    background-color: #111;
+    
+  }
+  
+  .footercontainer {
+    width: auto;
+    padding: 70px 30px 20px;
+    text-align: center;
+    background-color: rgba(18, 19, 26, 0.95);
+    opacity: 0.96;
+  }
+  
+  .socialicons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialicons a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+  }
+  
+  .socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerbottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .footerbottom pre {
+    color: white;
+  }
+  
+  .designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    color: #fff;
+    background-color: pink;
+    padding: 10px;
+  }
+
+
+
   
