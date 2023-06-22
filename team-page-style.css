@@ -1,0 +1,204 @@
+body{
+    background-color:bisque;
+}
+
+#header1{
+    text-align:center;
+}
+#header1 h1{
+    font-size: 150px;
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-right: 20px;
+    font-family: customfont;
+}
+#header1 h3{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: customfont;
+    margin-top: -95px;
+}
+
+
+
+#header{
+  background-image: initial;
+  background-color: initial;
+  max-height: 5.5em;
+  max-width: 100%;
+  
+  
+}
+#header nav{
+max-height: 4.5em;
+max-width: 60%;
+  float: right;
+  display: inline;
+ 
+ 
+  
+}
+#header ul{
+max-height: 3.5em;
+max-width: 60%;
+  display: inline;
+   padding-top: 20px;
+ color: black;
+ 
+ 
+  
+}
+
+a{
+  color: black;
+  padding-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 80%;
+  padding-right: 15px;
+  display: inline-block;
+  padding-top: 50px;
+}
+a:hover{
+  color: rgb(52, 133, 163);
+  cursor: pointer;
+}
+#header ul button{
+  padding-left: 15px;
+}
+
+#header img{
+max-height: 100px;
+max-width: 150px;
+  background: transparent;
+}
+
+
+#middle {
+    height: 100vh;
+ 
+}
+
+.list{
+  list-style-type: none;
+}
+.person{
+    height:350px;
+    width: 300px;
+    background-color:initial;
+    margin-left: 40px;
+    margin-top: 40px;
+    align-items:center;
+    color: black;
+    margin-bottom: -30px;
+}
+.person .pic{
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 150px;
+    width: 220px;
+    
+    
+    
+}
+.person:hover{
+    cursor: pointer;
+    background-color:burlywood;
+    transition: background-color 0.5s;
+    
+}
+.list{
+    display: inline-flex;
+}
+.person h3{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-bottom: -10px;
+    font-family: customfont;
+    
+}
+.person h4{
+    text-align: center;
+    margin-top: -5px;
+    font-size: 13px;
+    margin-right: 10px;
+    font-family: customfont;
+}
+.person:hover h3{
+   
+    transform: translateY(-5vh);
+    transition: all 0.5s;
+}
+
+.person:hover h4{
+   
+    transform: translateY(-5vh);
+    transition: all 0.5s;
+}
+.person:hover img{
+  width: 245px;
+  transition: all 0.5s;
+  margin-left: 25px;
+  border-radius: 200px;
+}
+
+footer {
+    background-color: #111;
+    
+  }
+  
+  .footercontainer {
+    width: fill;
+    padding: 70px 30px 20px;
+    text-align: center;
+    background-color: rgba(18, 19, 26, 0.95);
+    opacity: 0.96;
+    margin-top: 35px;
+  }
+  
+  .socialicons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialicons a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+  }
+  
+  .socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerbottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .footerbottom pre {
+    color: white;
+  }
+
+  @font-face {
+    font-family: customfont;
+    src:url(./images/palanquin/palanquin-regular.ttf);
+}
+

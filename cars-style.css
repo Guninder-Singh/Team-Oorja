@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#car-1{
+    background: url(./images/Model-S-homepage-desktop.avif);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 100vh;
+    z-index: -1;
+    width: 100%;
+}
+
+#header{
+    background-image: initial;
+    background-color: initial;
+    max-height: 5.5em;
+    max-width: 100%;
+    
+    
+}
+#header nav{
+  max-height: 4.5em;
+  max-width: 60%;
+    float: right;
+    display: inline;
+   
+   
+    
+}
+#header ul{
+  max-height: 3.5em;
+  max-width: 60%;
+    display: inline;
+     padding-top: 20px;
+   color: black;
+   
+   
+    
+}
+
+a{
+    color: black;
+    padding-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 80%;
+    padding-right: 15px;
+    display: inline-block;
+    padding-top: 50px;
+}
+a:hover{
+    color: rgb(52, 133, 163);
+    cursor: pointer;
+}
+#header ul button{
+    padding-left: 20px;
+}
+
+#header img{
+  max-height: 100px;
+  max-width: 150px;
+    background: transparent;
+}
+
+#car-2{
+    background: url(./images/Homepage-Model-X-Desktop-LHD.avif);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 100vh;
+    width: 100%;
+}
+
+.car-name{
+    height: 25vh;
+    width : 40vw;
+    margin-left: 30vw;
+    margin-top: 4vw;
+    color:mediumseagreen;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.car-name  h1{
+    font-family: 'PT Serif', serif;
+    font-size: 100px;
+}
+.info h3{
+    font-family: 'PT Serif', serif;
+    font-size: 15px;
+}
+.info #know-more-1:hover{
+    cursor: pointer;
+    color: crimson;
+}
+
+
+.car-name-2{
+    height: 25vh;
+    width : 40vw;
+    margin-left: 30vw;
+    padding-top: 8vw;
+    color:mediumseagreen;
+    text-align: center;
+}
+
+.car-name-2  h1{
+    font-family: 'PT Serif', serif;
+    font-size: 120px;
+}
+#details{
+    height:100vh;
+    display: none;
+    z-index: 1;
+
+ }
+ 
+
+ #details .list .p1{
+    height:20vh;
+    width:30%;
+margin-top: -10vh;
+    margin-right: 10vh;
+    margin-left: 10vh;
+    font-size: 20px;
+ }
+
+ #details .p1 h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2vh;
+ }
+ #details .p1 {
+    text-align: center;
+ }
+
+ #details .list .p2{
+    height:20vh;
+    width:30%;
+   margin-top: 20vh;
+    margin-left: 36vmax;
+    font-size: 20px;
+ }
+
+
+ #details .p2 h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2vh;
+ }
+
+ #details .p2 p{
+    text-align: center;
+ }
+
+ #details .list .p1.p3{
+    float: right;
+    
+ }
+
+
+
+
+
+
+ #details .list{
+list-style-type: none;
+
+ }
+ #details .list li{
+    display:inline-block;
+ }
+
+
+
+ footer {
+    background-color: #111;
+    border:#fff;
+    border-radius: 10px;
+    
+  }
+  
+  .footercontainer {
+    width: auto;
+    padding: 70px 30px 20px;
+    text-align: center;
+    background-color: rgba(18, 19, 26, 0.95);
+    opacity: 0.96;
+   
+    
+  }
+  
+  .socialicons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  .socialicons a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+  }
+  
+  .socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .footerbottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .footerbottom pre {
+    color: white;
+  }

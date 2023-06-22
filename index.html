@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/cc6782c5f3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body id="id-for-landing-page">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <div class ="landing-page">
      <header id="header">
             <img src="./images/logo.png">
           <nav>  <ul>
            <a href="">Home</a>
-           <a href="">The Cars</a>
-           <a href="">The Team</a>
+           <a href="./cars.html">The Cars</a>
+           <a href="./team-page.html">The Team</a>
            <a href="">Gallery</a>
            <a href="./sponsors.html">Sponsors</a>
-           <a href="./about-us.html">About Us</a>
+           <a href="">About Us</a>
            <a href="./contact-us.html">Contact us</a>
            <a href="">Join Us</a>
         </ul>
@@ -34,10 +37,17 @@
             <h2>  Automotive innovators redefining engineering excellence and dominance.</h2>
         </div>
 
-        <div class="arrow"> <a href="#team-page" class="scroll-arrow"></a></div>
+        <div class="bg">
+          <a href="#team-page" class="button">
+            <div class="button__arrow button__arrow--down"></div>
+          </a>
+        </div>
+        <div id="scroll" class="rest"></div>iv>
+      
     </div>
    
    
+    <section id="next-section">
 
 <div id="team-page">
     <div id="info">Team Oorja, the pride of Thapar College, is an extraordinary club dedicated to building high-performance racing cars and quad torcs. With their unmatched passion for automotive innovation, they redefine engineering excellence, leaving a lasting impact on the industry. Their unwavering commitment to precision, teamwork, and success makes Team Oorja a force to be reckoned with, consistently dominating the realm of collegiate automotive competitions.</div>
@@ -57,7 +67,7 @@
     </section>    
    
 </div>
-
+</section>
 
 <div id="social-media">
  <div id="colour">
@@ -69,6 +79,85 @@
  </div>
 </div>
 
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://img.vendingmarketwatch.com/files/base/cygnus/vmw/image/2022/09/primo_water_logo.632b1d2edbaee.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630" alt="Image 1">
+    </div>
+    <div class="swiper-slide">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPC8DckKumCK-GjGTCmQPeRxRdwhUZoch5hPK6D=w1080-h608-p-no-v0" alt="Image 2">
+    </div>
+    <div class="swiper-slide">
+      <img src="https://5.imimg.com/data5/SELLER/Logo/2022/7/MH/RV/QE/102829605/redon-logo-png-90x90.png" alt="Image 3">
+    </div>
+  </div>
+ 
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'cube',
+    grabCursor: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    cubeEffect: {
+      slideShadows: true,
+      shadow: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    on: {
+      slideChange: function () {
+        var activeIndex = swiper.realIndex;
+        var partnersHeading = document.querySelector('.partners-heading');
+        if (activeIndex === 2) {
+          partnersHeading.style.display = 'none';
+        } else {
+          partnersHeading.style.display = 'block';
+        }
+      },
+    },
+  });
+</script>
+
+<section id="about">
+    <div id="about-2">
+        <div class="content-box-lg">
+            <div class="continer">
+                <div class="row">
+                    <div id="col-md-4">
+                      <div class="about-item text-center">
+                         <i class="fa-solid fa-globe"></i>
+                         <h3>FOUNDED</h3>
+                         <p>2015</p>
+                      </div>
+                    </div>
+                    <div id="col-md-5">
+                        <div class="about-item text-center">
+                            <i class="fa-sharp fa-solid fa-people-group"></i>
+                           <h3>TEAM STRENGTH</h3>
+                           <p>50</p>
+                        </div>
+                      </div>
+                      <div id="col-md-6">
+                        <div class="about-item text-center">
+                            <i class="fa-solid fa-car"></i>
+                           <h3>CARS</h3>
+                           <p>10</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
 
 
 <div class="footercontainer">
